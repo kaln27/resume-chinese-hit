@@ -4,8 +4,8 @@ HIT 中文 LaTeX 简历模板
 本项目 fork 自 [zheyuye/resume-chinese](https://github.com/zheyuye/resume-chinese) 
 
 #### 主要更改内容
-- 把 fontawesome 放到 Font 文件夹下，解决 fontawesome 字体无法查找为题。
-- 将图片放入到 `img` 文件夹下，结构简单
+- 把 fontawesome 放到 Font 文件夹下，解决 fontawesome 字体无法查找问题。
+- 将图片放入到 `img` 文件夹下，使结构更简单
 - 优化布局，更改 logo 为 HIT 
 - 支持本地运行
 
@@ -21,14 +21,14 @@ LaTex语法内容以及框架基本上参照[Htallone/myCV](https://github.com/H
 
 ### 使用步骤
 
-#### overleaf
+#### 1. overleaf
 
 1. Download ZIP
 2. Overleaf -> New Project -> Upload Project
 3. Do your own editing
-4. **选择complier为`XeLaTeX`** (注意)
+4. **选择 complier 为 `XeLaTeX`** (注意)
 
-#### 本地运行
+#### 2. 本地运行
 需要本地安装好 LaTeX
 ```bash
 # 编译简历
