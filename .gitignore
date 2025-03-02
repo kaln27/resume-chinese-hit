@@ -1,0 +1,8 @@
+.vscode
+.DS_Store
+_*/
+*.aux 
+*.out 
+*.log 
+*.fdb_latexmk 
+*.fls

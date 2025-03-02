@@ -2,9 +2,6 @@
 \ProvidesClass{setting}
 \LoadClass[11pt]{article}
 
-% disable indent globally
-\setlength{\parindent}{0pt}
-
 
 % disable indent globally
 \setlength{\parindent}{0pt}
@@ -31,6 +28,7 @@
 % use xifthen
 \RequirePackage{xifthen}
 % use fontawesome
+\defaultfontfeatures{Path = Font/}
 \RequirePackage{fontawesome}
 % use xcolor for customizing color
 \RequirePackage{xcolor}
@@ -50,15 +48,15 @@
 
 % Main document font
 \setmainfont[
-    Path = Font/,
+  Path = Font/,
   Extension = .otf ,
   BoldFont = HelveticaNeueLTPro-Md.otf ,
 ]{HelveticaNeueLTPro-Roman.otf}
 
 \setCJKmainfont[
-Path = Font/,
+  Path = Font/,
   Extension = .ttf ,
-BoldFont=Pro_GB18030DemiBold.ttf,
+  BoldFont = Pro_GB18030DemiBold.ttf,
 ]{Pro_GB18030.ttf}
 
 
@@ -73,6 +71,7 @@ BoldFont=Pro_GB18030DemiBold.ttf,
 	bottom=1cm,
 	nohead
 ]{geometry}
+\graphicspath{{img}}
 \renewcommand{\baselinestretch}{1.2} %定义行间距1.2
 
 \usepackage{titlesec}
@@ -88,7 +87,7 @@ BoldFont=Pro_GB18030DemiBold.ttf,
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [{\color{ICBlue}\titlerule}]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*1.6}{*1.2}
+\titlespacing*{\section}{0cm}{*1.2}{*0.8}
 
 \titleformat{\subsection}
   {\large\raggedright}

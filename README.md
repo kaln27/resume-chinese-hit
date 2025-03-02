@@ -1,5 +1,13 @@
-# resume-chinese
-中文LaTeX简历模板
+# resume-chinese-hit
+HIT 中文 LaTeX 简历模板
+
+本项目 fork 自 [zheyuye/resume-chinese](https://github.com/zheyuye/resume-chinese) 
+
+#### 主要更改内容
+- 把 fontawesome 放到 Font 文件夹下，解决 fontawesome 字体无法查找为题。
+- 将图片放入到 `img` 文件夹下，结构简单
+- 优化布局，更改 logo 为 HIT 
+- 支持本地运行
 
 主要参考：
 
@@ -7,20 +15,40 @@
 - [WonderCV 学生求职模板](https://www.wondercv.com/zh-CN/resume_templates)
 - [Htallone/myCV](https://github.com/Htallone/myCV)
 - [hijiangtao/resume](https://github.com/hijiangtao/resume)
+- [zheyuye/resume-chinese](https://github.com/zheyuye/resume-chinese)
 
 LaTex语法内容以及框架基本上参照[Htallone/myCV](https://github.com/Htallone/myCV), 宏主要参照[hijiangtao/resume](https://github.com/hijiangtao/resume), 集各家之所长后做了些小修改, 方便直接从overleaf编译. 
 
 ### 使用步骤
 
+#### overleaf
+
 1. Download ZIP
 2. Overleaf -> New Project -> Upload Project
 3. Do your own editing
-4. 选择complier为`XeLaTeX`
+4. **选择complier为`XeLaTeX`** (注意)
 
-或者
+#### 本地运行
+需要本地安装好 LaTeX
+```bash
+# 编译简历
+make 
 
-0. 直接使用[Overleaf模板](https://www.overleaf.com/latex/templates/resume-chinese/vbrmnfrgbscv), 开始你的编辑
+# 清除中间件
+make clean
+```
 
+### 文件结构
+
+`resume-photo.tex`: 照片版简历头部
+
+`resume.tex`: 文字版简历头部
+
+`body.tex`: 简历主要内容
+
+`footer.tex`: 页脚内容
+
+`img/self.jpg`: 你的肖像（选一个好看的 ^-^）
 
 ###  宏(newcommand)
 
@@ -38,17 +66,6 @@ LaTex语法内容以及框架基本上参照[Htallone/myCV](https://github.com/H
 
 ### 效果示例
 
-**纯享版:**
+![page1](./asset/page1.png)
 
-![resume](https://zheyuye-image-1257819557.cos.ap-shanghai.myqcloud.com/img/resume.png)
-
-
-**照片版:**
-
-页眉个人照片+学校logo:
-
-![head](https://zheyuye-image-1257819557.cos.ap-shanghai.myqcloud.com/img/image-20210408152658206.png)
-
-页脚个人信息:
-
-![footer](https://zheyuye-image-1257819557.cos.ap-shanghai.myqcloud.com/img/image-20210408152718217.png)
+![page2](./asset/page2.png)
